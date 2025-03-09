@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}CAPPPPPPP{% endblock %}
+{% block content %}
+<h2>All About That | {{ session['user'] }}...</h2>
+<h4>{{ data[session['current_question']]['text'] }}</h4>
+<form class="form-inline my-2 my-lg-0" method="post">
+    <p>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="button_value" value="true">FACT</button>
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" name="button_value" value="false">CAP</button>
+    </p>
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}The Quiz{% endblock %}
+{% block content %}
+<h1>Hey {{ user }}!</h1>
+<br>
+<h3>What type of political question do you want?</h3>
+<form class="form-inline my-2 my-lg-0" method="post">
+    <p>
+        <input class="form-control mr-sm-2" type="text" placeholder="Trump..." name="topic" aria-label="Search" required>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enter</button>
+    </p>
+</form>
+{% endblock %}
